@@ -1,55 +1,20 @@
 ---
 layout: page
-title: Project 1
-description: a project with a background image
-img: /assets/img/12.jpg
+title: Dialogue Agent Consistency Evaluation
+description: #
+img: /assets/img/dance.png
 ---
 
-Every project has a beautiful feature shocase page. It's easy to include images, in a flexible 3-column grid format. Make your photos 1/3, 2/3, or full width.
+This work was done as a course project for CSE 538 Natural Language Processing, Fall 19. The motivation behind this project was to understand where persona based chatbots could go wrong while interacting with a user. We wanted to do this quantitatively, running multiple trial episodes.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+####  Abstract:
 
-    ---
-    layout: page
-    title: Project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Persona based neural conversational models are important in the world of chatbots and to test the consistency of such models is integral for them being performant. We present an automated mechanism to detect the breaking point of such models, specifically targeting “TransferTransfo” (Wolf et al., 2019b). Natural language inference is used to calculate a metric stating the average number of utterances required to break a persona based model. An extensive comparison between and random-sequenced-inputs and personality-sentences-permuted-inputs has been performed.
 
+<a href="{{ site.baseurl }}/assets/pdf/dance.pdf">Project Report</a>
 
-<div class="img_row">
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/1.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/2.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/3.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="img_row">
-    <img class="col three left" src="{{ site.baseurl }}/assets/img/5.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    This image can also have a caption. It's like magic.
-</div>
+<a href="https://github.com/echodarkstar/cs538-project">Code</a>
 
-You can also put regular text between your rows of images. Say you wanted to write a little bit about your project before you posted the rest of the images. You describe how you toiled, sweated, *bled* for your project, and then.... you reveal it's glory in the next row of images.
+<img  style="height:75%;width:75%;display:block;margin-left:auto;margin-right:auto;" src="{{ site.baseurl }}/assets/img/dance1.png" alt="" title="framework"/>
+<img style="display:block;margin-left:auto;margin-right:auto;" src="{{ site.baseurl }}/assets/img/dance2.png" alt="" title="finetuning"/>
 
-
-<div class="img_row">
-    <img class="col two left" src="{{ site.baseurl }}/assets/img/6.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/11.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-<br/><br/>
-
-
-The code is simple. Just add a col class to your image, and another class specifying the width: one, two, or three columns wide. Here's the code for the last row of images above:
-
-<div class="img_row">
-    <img class="col two left" src="/img/6.jpg"/>
-    <img class="col one left" src="/img/11.jpg"/>
-</div>

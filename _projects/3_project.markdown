@@ -1,56 +1,18 @@
 ---
 layout: page
-title: Project 3
-description: a project that redirects to another website
-img:
-redirect: https://unsplash.com
+title: FaceVer
+description: Siamese Networks for face verification
+img: /assets/img/facever.png
 ---
 
-Every project has a beautiful feature shocase page. It's easy to include images, in a flexible 3-column grid format. Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: Project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 
-<div class="img_row">
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/1.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/2.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/3.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="img_row">
-    <img class="col three left" src="{{ site.baseurl }}/assets/img/5.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    This image can also have a caption. It's like magic.
-</div>
+This project was made for a 3 month long hackathon conducted by Mastek called Project Deep Blue. Our team won the 2nd prize in the competition, and we later deployed the solution.
 
-You can also put regular text between your rows of images. Say you wanted to write a little bit about your project before you posted the rest of the images. You describe how you toiled, sweated, *bled* for your project, and then.... you reveal it's glory in the next row of images.
+<a href="https://arxiv.org/abs/1811.06194v1">Paper</a>
 
+<a href="https://github.com/echodarkstar/Face-verification-siamese-network">Code</a>
 
-<div class="img_row">
-    <img class="col two left" src="{{ site.baseurl }}/assets/img/6.jpg" alt="" title="example image"/>
-    <img class="col one left" src="{{ site.baseurl }}/assets/img/11.jpg" alt="" title="example image"/>
-</div>
-<div class="col three caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+#### Abstract:
 
-
-<br/><br/>
-
-
-The code is simple. Just add a col class to your image, and another class specifying the width: one, two, or three columns wide. Here's the code for the last row of images above:
-
-<div class="img_row">
-    <img class="col two left" src="/img/6.jpg"/>
-    <img class="col one left" src="/img/11.jpg"/>
-</div>
+Although modern face verification systems are accessible and accurate, they are not always robust to pose variance and occlusions. Moreover, accurate models require a large amount of data to train. We structure our experiments to operate on small amounts of data obtained from an NGO that funds opthalmic surgeries. We set up our face verification task as that of verifying pre-operation and post-operation images of a patient that undergoes opthalmic surgery, and as such the post-operation images have occlusions like an eye patch. In this paper, we present a system that performs the face verification task using one-shot learning. To this end, our paper uses deep convolutional networks and compares different model architectures and loss functions. Our best model achieves 85% test accuracy. During inference time, we also attemt to detect image forgeries in addition to performing face verification. To achieve this, we use Error Level Analysis. Finally, we propose an inference pipeline that demonstrates how these techniques can be used to implement an automated face verification and forgery detection system.

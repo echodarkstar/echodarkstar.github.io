@@ -1,23 +1,18 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
-description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
+title: nishant shankar
+description: CS Masters Student @ <a href= "https://www.cs.stonybrook.edu/">Stony Brook University</a>, natural language automaton
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
-news: true
+news: false
 social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My research interests cover natural language processing, machine learning, and language science. I am currently working on natural language generation and explainable NLP, advised by Prof. [Niranjan Balasubramanian](https://www3.cs.stonybrook.edu/~niranjan/). Previously, I have worked on projects in NLP, computer vision, and data visualization among other software projects.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+This semester (Spring 2020) I'll be doing coursework in robotics and computational linguistics. This is also in pursuit of understanding two research questions: i) how does language representation map to action representations for agents, ii) how does viewing language as computation inform representation learning in NLP?

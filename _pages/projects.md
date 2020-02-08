@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Projects here is a loose term covering hackathon projects, course projects, and some work done for the heck of it.
 ---
 
 {% for project in site.projects %}
