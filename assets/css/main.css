@@ -12,9 +12,15 @@
   .site-header .site-nav { float: right; }
   blockquote { margin-left: 2rem; padding: 2rem; }
   .social-icons-left { text-align: left; }
-  .social-icons-right { text-align: right; } }
-@media screen and (min-width: 48em) { html { font-size: 18px; } }
-@media screen and (min-width: 64em) { html { font-size: 20px; } }
+  .social-icons-right { text-align: right; }
+  .img_row { height: 91.6666666667px; }
+  .col { padding: 1.6666666667px; } }
+@media screen and (min-width: 48em) { html { font-size: 18px; }
+  .img_row { height: 183.3333333333px; }
+  .col { padding: 3.3333333333px; } }
+@media screen and (min-width: 64em) { html { font-size: 20px; }
+  .img_row { height: 275px; }
+  .col { padding: 5px; } }
 @media screen and (min-width: 78em) { em img { max-width: 56rem; margin-left: -7em; } }
 /*!
 
@@ -312,6 +318,8 @@ hr { border: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bot
 
 .px4 { padding-left: 4rem; padding-right: 4rem; }
 
+html { margin-left: calc(100vw - 100%); margin-right: 0; }
+
 html, body { height: auto; min-height: 100%; -webkit-text-size-adjust: 100%; }
 
 img { max-width: none; }
@@ -330,7 +338,7 @@ body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: 
 
 .right { float: right; }
 
-.site-header { border-bottom: 1px solid #e8e8e8; background-color: #fff; opacity: 0.95; position: fixed; left: 0px; top: 0px; width: 100%; z-index: 50; }
+.site-header { border-bottom: 1px solid #e8e8e8; background-color: #fff; opacity: 0.95; position: fixed; left: calc((100vw - 100%)/2); top: 0px; width: 100%; z-index: 50; }
 
 .site-title { font-size: 20px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; }
 
@@ -385,7 +393,7 @@ footer a:hover { color: #B509AC; }
 
 .project { box-sizing: border-box; float: left; height: 250px; padding: 10px; vertical-align: middle; width: 33.33%; }
 .project .thumbnail { overflow: hidden; height: 200px; width: 100%; }
-.project .thumbnail img { height: auto; position: relative; left: -25%; top: -5%; width: 500px; }
+.project .thumbnail img { height: auto; position: relative; }
 .project .thumbnail a { float: left; height: 230px; position: relative; width: 100%; }
 .project .thumbnail a span { display: none; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.4); color: #e8e8e8; padding: 40px; text-align: center; }
 .project .thumbnail a span h1 { font-size: 1.5rem; margin: 0; }
@@ -479,9 +487,9 @@ figcaption { font-size: 0.875rem; }
 
 .blankbox { background: #B509AC; }
 
-.img_row { height: 275px; width: 100%; overflow: hidden; box-sizing: border-box; }
+.img_row { /*height: $img-height;*/ width: 100%; overflow: hidden; box-sizing: border-box; }
 
-.col { width: 100%; height: 100%; object-fit: cover; box-sizing: border-box; padding: 5px; }
+.col { width: 100%; height: 100%; object-fit: cover; box-sizing: border-box; /*padding: $img-spacing;*/ }
 
 .one { width: 33.33%; }
 
