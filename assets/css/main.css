@@ -483,7 +483,7 @@ footer.sticky-bottom {
 }
 .projects .card-item {
   width: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .projects .card-item .row {
   display: flex;
@@ -492,7 +492,7 @@ footer.sticky-bottom {
 .projects .grid-sizer,
 .projects .grid-item {
   width: 250px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .projects h2.category {
   color: var(--global-divider-color);
